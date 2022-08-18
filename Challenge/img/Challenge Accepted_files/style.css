@@ -1,0 +1,198 @@
+body {
+    background: rgba(186, 212, 255, 0.5);
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    transition: 0.5s all;
+}
+
+.content {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.sidebar {
+    animation-name: fade-in;
+    animation-duration: 15s;
+}
+
+img:hover {
+    height: 250px;
+    width: 500px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 30px;
+}
+
+.image-grid {
+
+    margin: 10px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-grid>img {
+    margin: 10px;
+}
+
+
+#image-1 {
+    float: right;
+    margin: 10px;
+    height: 300px;
+
+}
+
+.post {
+    border: 2px solid rgb(229, 158, 66);
+    margin: 10px;
+}
+
+.post-title {
+    margin-left: 5px;
+}
+
+.post-text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.post>a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(70, 137, 244);
+    transition: 0.5s color;
+}
+
+.post>a:hover {
+    color: rgb(186, 212, 255);
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.back {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70pt;
+    font-weight: 700;
+    text-align: center;
+    color: brown;
+    padding-top: 100px;
+    text-decoration: none;
+
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.subtitle {}
+
+.sidebar {
+    background: rgb(255, 227, 191);
+}
+
+
+/* challenge accepted*/
+.flex-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.grid-container {
+    background-color: rgb(235, 244, 222);
+    margin: 10px;
+    height: 400px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px
+}
+
+.grid-item {
+    /*line-height: 40px;*/
+}
+
+
+.grid-item2 {
+    width: 100px;
+
+    background-color: rgb(63, 68, 61);
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 5;
+    grid-column-end: 2;
+
+}
+
+.grid-item3 {
+    width: 100px;
+
+    background-color: rgb(7, 171, 54);
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    grid-row-end: 5;
+    grid-column-end: 2;
+
+}
+
+.grid-item4 {
+
+    height: 100px;
+    background-color: rgb(176, 16, 139);
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    grid-row-end: 1;
+    grid-column-end: 4;
+}
+
+/* challenge accepted*/
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -692,4 +692,15 @@
     })();
     console.log(increment(5, 2));
     console.log(increment(5));
+
+    const sumofArray = (function () {
+        //return function sumofArray(x, y, z) {
+        //const args = [x, y, z];
+        return function sumofArray(...args) {
+            return args.reduce((a, b) => a + b, 0);
+        };
+    })();
+    console.log(Math.round(sumofArray(1, 2, 3.3, 67)));
+
+
 </script>

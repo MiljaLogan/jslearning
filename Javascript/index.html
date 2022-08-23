@@ -700,7 +700,13 @@
             return args.reduce((a, b) => a + b, 0);
         };
     })();
-    console.log(Math.round(sumofArray(1, 2, 3.3, 67)));
+    console.log(Math.round(sumofArray(1, 2, 3.3, 67, 1)));
 
-
+    const arr1 = ['Jan', 'Feb', 'Mar', 'Apr', 'May'];
+    let arr2;
+    (function () {
+        arr2 = [...arr1];
+        arr1[1] = 'Tomato';
+    })();
+    console.log(arr2);
 </script>

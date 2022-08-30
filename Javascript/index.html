@@ -806,8 +806,15 @@
     const createPerson1 = (name, age, gender) => ({ name, age, gender });
     console.log(createPerson1("Milja Loganthan", 33, "Frau"));
 
-
-
+    const bicycle = {
+        gear: 2,
+        setGear(newGear) {
+            "use Strict";
+            this.gear = newGear;
+        }
+    };
+    bicycle.setGear(4);
+    console.log(bicycle.gear);
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

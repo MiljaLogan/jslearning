@@ -794,6 +794,20 @@
     }
     const resultDisplayArray = makeList(result.skipped);
     console.log(resultDisplayArray);
+
+    const createPerson = (name, age, gender) => {
+        return {
+            name: name,
+            age: age,
+            gender: gender
+        };
+    };
+    console.log(createPerson("Milja Loganthan", 33, "Frau"));
+    const createPerson1 = (name, age, gender) => ({ name, age, gender });
+    console.log(createPerson1("Milja Loganthan", 33, "Frau"));
+
+
+
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

@@ -763,14 +763,37 @@
         average: 35.85
     };
     const half = (function () {
-        return function half(status) {
-            return (status.max + status.min) / 2.0;
+        //return function half(status) {
+        return function half({ min, max }) {
+            //return (status.max + status.min) / 2.0;
+            return (max + min) / 2.0;
         };
     })();
     console.log(status);
     console.log(half(status));
 
-    
+    const person = {
+        name: "Milja Else Augustine",
+        age: 33
+    };
+    const greeting = `Hello , my name is ${person.name}! 
+    I am ${person.age} years old.`
+    console.log(greeting);
+
+    const result = {
+        success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        failure: ["no-war", "var-on-top", "linebreak"],
+        skipped: ["id-blacklist", "no-dup-keys"]
+    };
+    function makeList(arr) {
+        const resultDisplayArray = [];
+        for (let i = 0; i < arr.length; i++) {
+            resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+        }
+        return resultDisplayArray;
+    }
+    const resultDisplayArray = makeList(result.skipped);
+    console.log(resultDisplayArray);
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

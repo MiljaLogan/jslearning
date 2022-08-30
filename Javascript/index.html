@@ -815,6 +815,21 @@
     };
     bicycle.setGear(4);
     console.log(bicycle.gear);
+
+
+    var spaceShuttle = function (targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+    var zeus = new spaceShuttle('Jupiter');
+    console.log(zeus.targetPlanet);
+
+    class spaceShuttle1 {
+        constructor(targetPlanet) {
+            this.targetPlanet = targetPlanet;
+        }
+    }
+    var zeus = new spaceShuttle1('Jupiter');
+    console.log(zeus.targetPlanet);
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

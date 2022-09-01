@@ -830,6 +830,19 @@
     }
     var zeus = new spaceShuttle1('Jupiter');
     console.log(zeus.targetPlanet);
+
+    function makeClass() {
+        class Vegetable {
+            constructor(name) {
+                this.name = name;
+            }
+        }
+        return Vegetable;
+    }
+    const Vegetable = makeClass();
+    const carrot = new Vegetable('carrot');
+    console.log(carrot.name);
+
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

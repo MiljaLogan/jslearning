@@ -843,6 +843,27 @@
     const carrot = new Vegetable('carrot');
     console.log(carrot.name);
 
+    function makeTemp() {
+        class Thermostat {
+            constructor(temp) {
+                this.temp = 5 / 9 * (temp - 32);
+            }
+            get temparature() {
+                return this.temp;
+            }
+            set temparature(updatedTemp) {
+                this.temp = updatedTemp;
+            }
+        }
+        return Thermostat;
+    }
+
+    const Thermostat=makeTemp();
+    const thermos =new Thermostat(76);
+    let temp=thermos.temparature;
+    thermos.temparature=26;
+    temp=thermos.temparature;
+    console.log(temp)
     //https://stackoverflow.com/questions/42213657/how-to-push-modified-files-into-github-project-repo
 
 </script>

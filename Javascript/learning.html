@@ -1,24 +1,51 @@
 <script>
     const myArray = []; // Value cannot be changed
-    // var str = "this is";
+
     for (let i = 0; i < 20; i++) {
         myArray.push(i)
-        console.log(`This is ${i}`)
-
-
     }
 
-    
+    myArray.forEach((index, entry) => {
+        //console.log(`This is ${index}: ${entry}`);
+    })
+    for (let j = 0; j < myArray.length; j++) {
+        console.log(`This is ${j}`);
+    }
     const a = ["a", "v"]
-    console.log(a.length)
-    console.log(myArray.length);
+    // console.log(a.length)
+    //console.log(myArray.length);
     // console.log(myArray);
-    // console.log(i, myArray);
-    //"this is 0"
-    //"this is 1"
+
+    let array = [1, 6, 9, 7, 11, 10]
+    let max = 0, secondMax = 0; thirdMax = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= max) {
+            thirdMax = secondMax;
+            secondMax = max;
+            max = array[i];
+        } else if (array[i] > secondMax) {
+            thirdMax = secondMax;
+            secondMax = array[i];
+        } else if (array[i] > thirdMax) {
+            thirdMax = array[i];
+        }
+    }
+    console.log(max + " Max");
+    console.log(secondMax + " secondMax");
+    console.log(thirdMax + " thirdMax");
+
+    const x = 9
+    const result = (x % 2 == 0) ? "even" : "odd";
+
+    console.log(`The number is ${result}.`);
+
+    const name = ["Milja", "Logan", "Paari", "Pegan", 10]
+    const values = name.includes("bhcj");
+    console.log(values);
 
 
-    var myStr = " Firstline\n\t secondline\nthirdline";
-    console.log(myStr);
-
+    //var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const y = name.includes('P');
+    console.log(y);
 </script>

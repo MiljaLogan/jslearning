@@ -43,9 +43,21 @@
     const name = ["Milja", "Logan", "Paari", "Pegan", 10]
     const values = name.includes("bhcj");
     console.log(values);
+    const nameLength = name.length;
+    console.log(nameLength);
+    let arrayName = '';
 
-
-    //var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const y = name.includes('P');
-    console.log(y);
+    function arrayDisplay(arrayName) {
+        for (let i = 0; i <= nameLength; i++) {
+            console.log(arrayName + " array");
+            if (name[i] == arrayName) {
+                arrayName = name[i];
+                console.log(arrayName)
+            }
+            else {
+                console.log("No name in the list")
+            }
+        }
+    }
+    arrayDisplay("Milja");
 </script>
